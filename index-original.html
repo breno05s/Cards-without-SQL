@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cards</title>
+</head>
+<body>
+    <section class="cards">
+        <h2 class="gamecard_title">
+            Cards 1
+        </h2>
+        <ul class="game_card" id="gameCard">
+            <a  href=""></a>
+        </ul>
+        <h2 class="modcard_title">
+            Cards 2
+        </h2>
+        <ul class="mod_card" id="modCard">
+            
+        </ul>
+        <h2 class="addcard_title">Adicionar card:</h4>
+        <div class="add_section">
+            <div class="card_add">
+                <label for="itemsite_url">Coloque uma URL para o redirecionamento do card:</label>
+                <input id="itemSiteUrl" type="url" required placeholder="http://example.com.br">
+
+                <label for="cardImg">Coloque o URL de uma imagem para o card:</label>
+                <input id="cardImgUrl" type="url" required placeholder="http://example.com.br">
+
+                <h4>Selecione o tipo de card para adicionar:</h4>
+                <div class="typeChoice">
+                    <label for="game">Card 1:</label>
+                    <input name="option" type="radio" id="game">
+                    <label for="mod">Card 2:</label>
+                    <input name="option" type="radio" id="mod">
+                </div>
+                <input class="addcard_btn" type="button" value="Adicionar">
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
