@@ -48,7 +48,11 @@ const addItem = (event) => {
     const imgURL = document.querySelector('div.card_add input#cardImgUrl').value;
     const element = event.target;
 
-    if (imgURL === "" || url === "" && gameOption || modOption) {
+    if (imgURL === "" || url === "" && gameOption) {
+        alert('As URLs precisam ser definidas')
+        return
+    }
+    else if (imgURL === "" || url === "" && modOption) {
         alert('As URLs precisam ser definidas')
         return
     }
