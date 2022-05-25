@@ -1,9 +1,5 @@
-const gameDatabase = [
-
-]
-const modDatabase = [
-
-]
+const gameDatabase = []
+const modDatabase = []
 const getGameDatabase = () => JSON.parse(localStorage.getItem('gameCard')) ?? [];
 const setGameDatabase = (gameDatabase) => localStorage.setItem('gameCard', JSON.stringify(gameDatabase));
 const getModDatabase = () => JSON.parse(localStorage.getItem('modCard')) ?? [];
@@ -16,7 +12,6 @@ const generateGameItem = (img, url, index) => {
         <img src="${img}">
         <button class="game_btn" data-index=${index}><a target="_blank" data-index=${index} href="${url}">Ver</a></button>
         <input class="delete_btn" name="removeGameItem" type="button" value="X" title="Deletar" data-index=${index}>`
-
     document.querySelector('section.cards ul.game_card').appendChild(gameItem);
 }
 const generateModItem = (img, url, index) => {
@@ -26,7 +21,6 @@ const generateModItem = (img, url, index) => {
         <img src="${img}">
         <button class="mod_btn" data-index=${index}><a target="_blank" data-index=${index} href="${url}">Ver</a></button>
         <input class="delete_btn" name="removeModItem" type="button" value="X" title="Deletar" data-index=${index}>`
-
     document.querySelector('section.cards ul.mod_card').appendChild(modItem);
 }
 const cleanCards = () => {
@@ -54,19 +48,7 @@ const addItem = (event) => {
     const imgURL = document.querySelector('div.card_add input#cardImgUrl').value;
     const element = event.target;
 
-    if (imgURL === "" && gameOption) {
-        alert('As URLs precisam ser definidas')
-        return
-    }
-    else if (url === "" && gameOption) {
-        alert('As URLs precisam ser definidas')
-        return
-    }
-    else if (imgURL === "" && modOption) {
-        alert('As URLs precisam ser definidas')
-        return
-    }
-    else if (url === "" && modOption) {
+    if (imgURL === "" || url === "" && gameOption || modOption) {
         alert('As URLs precisam ser definidas')
         return
     }
@@ -75,7 +57,6 @@ const addItem = (event) => {
         gameDatabase.push({'img': imgURL, 'url': url})
         setGameDatabase(gameDatabase);
         refreshScreen()
-
         document.querySelector('div.card_add input#itemSiteUrl').value = ""
         document.querySelector('div.card_add input#cardImgUrl').value = ""
     } 
@@ -84,7 +65,6 @@ const addItem = (event) => {
         modDatabase.push({'img': imgURL, 'url': url})
         setModDatabase(modDatabase);
         refreshScreen()
-
         document.querySelector('div.card_add input#itemSiteUrl').value = ""
         document.querySelector('div.card_add input#cardImgUrl').value = ""
     }
@@ -106,9 +86,7 @@ const removeItem = (event) => {
         refreshScreen()
     }
 }
-
 document.querySelector('div.card_add input.addcard_btn').addEventListener('click', addItem)
 document.querySelector('section.cards ul#gameCard').addEventListener('click', removeItem)
 document.querySelector('section.cards ul#modCard').addEventListener('click', removeItem)
-
 refreshScreen()
