@@ -8,7 +8,7 @@
 
 <h2>Como usar:</h2>
 
-<p>Basta colocar o link da imagem para capa do card, o link da URL que será para onde o card vai redirecionar ao clicar em no botão Ver, e escolher algumas das duas opções ali. Você também poderá apagar o card ao clicar no botão X. os Botões Ver e X aparecem ao passar o mouse sobre o card</p>
+<p>Basta colocar o link da imagem para capa do card, o link da URL que será para onde o card vai redirecionar ao clicar no botão Ver, e escolher algumas das duas opções de card. Você também poderá apagar o card ao clicar no botão X. os Botões Ver e X aparecem ao passar o mouse sobre o card</p>
 
 <img src="./media/ex1.png" alt="Exemplo.">
 
