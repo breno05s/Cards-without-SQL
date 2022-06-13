@@ -23,24 +23,25 @@ section.cards ul::-webkit-scrollbar-thumb {
     border: 3px solid rgba(252, 164, 2, 100%); 
     border-radius: 5px;
 }
-.gamecard_title,
-.modcard_title,
+/*--------------------------------------------------------------CARD STYLE------------------------------------------------*/
+.card1_title,
+.card2_title,
 .addcard_title {
     font-size: 25px;
     padding: 5px 2vw;
     background-image: linear-gradient(to left, rgb(255, 237, 206), rgb(255, 237, 206), rgb(255, 182, 46));
     color: #fff;
 }
-.game_card,
-.mod_card  {
+.item1_card,
+.item2_card  {
     list-style: none;
     overflow-x: scroll;
     position: relative;
     display: flex;
     justify-content: flex-start;
 }
-.game_item,
-.mod_item {
+.item1_item,
+.item2_item {
     margin: 10px 1vw;
     min-width: 200px;
     height: 300px;
@@ -48,15 +49,15 @@ section.cards ul::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
 }
-.game_item img,
-.mod_item img {
+.item1_item img,
+.item2_item img {
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 50%);
     border-radius: 5px;
     height: 100%;
     width: 200px;
 }
-.game_btn,
-.mod_btn {
+.item1_btn,
+.item2_btn {
     height: 40px;
     width: 145px;
     color: white;
@@ -92,28 +93,28 @@ section.cards ul li button a{
     padding: 10px 60px;
     background-color: transparent;
 }
-.game_item img:hover ~  .game_btn,
-.mod_item img:hover ~  .mod_btn,
-.game_item img:hover ~ .delete_btn,
-.mod_item img:hover ~ .delete_btn {
+.item1_item img:hover ~  .item1_btn,
+.item2_item img:hover ~  .item2_btn,
+.item1_item img:hover ~ .delete_btn,
+.item2_item img:hover ~ .delete_btn {
     transition: opacity 0.3s;
     opacity: 1;
 }
-.game_btn:hover,
-.mod_btn:hover,
+.item1_btn:hover,
+.item2_btn:hover,
 .delete_btn:hover {
     background-color: darkorange;
     transition: 0.2s;
     opacity: 1;
 }
-.game_btn:active,
-.mod_btn:active,
+.item1_btn:active,
+.item2_btn:active,
 .delete_btn:active {
     background-color: orange;
     border: solid 3px orange;
     border-bottom: solid 6px orange;
 }
-/*ADD CARDS*/
+/*------------------------------------------------------------ADD CARDS----------------------------------------------------*/
 .add_section {
     display: flex;
     justify-content: center;
@@ -169,7 +170,7 @@ div.card_add input[type="button"] {
     height: 40px;
     width: 95%;
     color: #fff;
-    margin-top: 5px;
+    margin-top: 20px;
     font-size: medium;
     text-align: center;
     background-color: transparent;
@@ -188,4 +189,9 @@ div.card_add input[type="button"] {
     margin-top: 4px;
     margin-right: 20%;
     background-color: red;
+}
+/*----------------------------------------------SWITCH LANGUAGE--------------------------------------*/
+.switch_language a{
+    text-decoration: none;
+    color: red;
 }

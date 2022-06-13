@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Cards</title>
 </head>
 <body>
     <section class="cards">
-        <h2 class="gamecard_title">
+        <h2 class="card1_title">
             Cards 1
         </h2>
-        <ul class="game_card" id="gameCard">
+        <ul class="item1_card" id="item1Card">
             
         </ul>
-        <h2 class="modcard_title">
+        <h2 class="card2_title">
             Cards 2
         </h2>
-        <ul class="mod_card" id="modCard">
+        <ul class="item2_card" id="item2Card">
             
         </ul>
         <h2 class="addcard_title">Adicionar card:</h4>
@@ -32,15 +32,20 @@
 
                 <h4>Selecione o tipo de card para adicionar:</h4>
                 <div class="typeChoice">
-                    <label for="game">Card 1:</label>
-                    <input name="option" type="radio" id="game">
-                    <label for="mod">Card 2:</label>
-                    <input name="option" type="radio" id="mod">
+                    <label for="item1">Card 1:</label>
+                    <input name="option" type="radio" id="item1">
+                    <label for="item2">Card 2:</label>
+                    <input name="option" type="radio" id="item2">
                 </div>
-                <input class="addcard_btn" type="button" value="Adicionar">
+                <input class="addcard_btn" type="button" value="Add">
+                <p class="switch_language" align="center">
+                    <a href="../html/index-ptBr.html">Portuguese</a>
+                    |
+                    <a href="../html/index-eng.html">English</a>
+                </p>
             </div>
         </div>
     </section>
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
