@@ -1,7 +1,7 @@
 <p align="center">
-<a href="/docs/README_portuguese.md">Portuguese</a>
- | 
-<a href="/docs/README_english.md">English</a>
+  <a href="/docs/readme/README_portuguese.md">Portuguese</a>
+  | 
+  <a href="/docs/readme/README_english.md">English</a>
 </p>
 
 <h1>Cards(sem SQL)</h1>
@@ -10,19 +10,19 @@
 
 <p>O  usuário poderá adicionar ou remover cards no seu site, que servirão para redirecionar o usuário a alguma outra pagina ou site.</p>
 
-<img src="./media/homeScreen.png" alt="Tela inicial">
+<img src="/media/homeScreen.png" alt="Tela inicial">
 
 <h2>Como usar:</h2>
 
 <p>Basta colocar o link da imagem para capa do card, o link da URL que será para onde o card vai redirecionar ao clicar no botão Ver, e escolher algumas das duas opções de Card. Você também poderá apagar o card ao clicar no botão X. os Botões Ver e X aparecem ao passar o mouse sobre o card</p>
 
-<img src="./media/ex1.png" alt="Exemplo1">
+<img src="/media/ex1.png" alt="Exemplo1">
 
 <p>O card será adicionado em Card 1 ou Card 2, dependendo da opção que você escolher.</p>
 
-<img src="./media/ex2.png" alt="Exemplo2">
+<img src="/media/ex2.png" alt="Exemplo2">
 
-<img src="./media/ex3.png" alt="Exemplo3">
+<img src="/media/ex3.png" alt="Exemplo3">
 
 <h2>Linguagens usadas:</h2>
 <div style="display: inline_block">
