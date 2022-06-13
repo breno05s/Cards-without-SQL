@@ -10,19 +10,19 @@
 
 <p>The user will be able to add or remove cards on your site, which will serve to redirect the user to some other page or site.</p>
 
-<img src="/media/engHomeScreen.png" alt="HomeScreen">
+<img src="/media/homeScreen.png" alt="HomeScreen">
 
 <h2>How to use:</h2>
 
 <p>Just put the image link for the card cover, the URL link that will be where the card will redirect when clicking on the View button, and choose one of the two Card options. You can also delete the card by clicking the X button. The View and X Buttons appear when hovering over the card</p>
 
-<img src="/media/engEx1.png" alt="Example1">
+<img src="/media/ex1.png" alt="Example1">
 
 <p>The card will be added in 1 or Card 2 by selecting Card from the option you choose.</p>
 
-<img src="/media/engEx2.png" alt="Example2">
+<img src="/media/ex2.png" alt="Example2">
 
-<img src="/media/engEx3.png" alt="Example3">
+<img src="/media/ex3.png" alt="Example3">
 
 <h2>Used languages:</h2>
 <div style="display: inline_block">
